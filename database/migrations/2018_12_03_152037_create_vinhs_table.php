@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class Create$MODEL_NAME_PLURAL$Table extends Migration
+class Create$TABLE_CLASS_NAME$Table extends Migration
 {
 
     /**
@@ -13,8 +13,12 @@ class Create$MODEL_NAME_PLURAL$Table extends Migration
      */
     public function up()
     {
-        Schema::create('$TABLE_NAME$', function (Blueprint $table) {
-            $FIELDS$
+        Schema::create('vinhs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->undefined('undefined');
+            $table->string('name');
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -25,6 +29,6 @@ class Create$MODEL_NAME_PLURAL$Table extends Migration
      */
     public function down()
     {
-        Schema::drop('$TABLE_NAME$');
+        Schema::drop('vinhs');
     }
 }

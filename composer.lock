@@ -1652,12 +1652,17 @@
         },
         {
             "name": "infyomlabs/laravel-generator",
-            "version": "1.0",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-generator.git",
+                "reference": "a2038b2ae6c72987e79e830896cc6d12c06e4ee7"
+            },
             "dist": {
-                "type": "path",
-                "url": "./infyomlabs/laravel-generator",
-                "reference": "1dc7ce3ee7c732dee003faba6a1a6fd4b4a90776",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/a2038b2ae6c72987e79e830896cc6d12c06e4ee7",
+                "reference": "a2038b2ae6c72987e79e830896cc6d12c06e4ee7",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "~5.0",
@@ -1674,6 +1679,7 @@
                     "src/helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1691,13 +1697,13 @@
                 "laravel",
                 "migration",
                 "model",
-                "model",
                 "repository",
                 "request",
                 "swagger",
                 "test",
                 "view"
-            ]
+            ],
+            "time": "2016-08-18T14:19:50+00:00"
         },
         {
             "name": "infyomlabs/swagger-generator",
